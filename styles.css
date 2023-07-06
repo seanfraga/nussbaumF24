@@ -8,7 +8,7 @@
 
 .header h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 64px;
 }
 
 /* Styles for the body */
@@ -18,7 +18,7 @@ body {
 }
 
 #message {
-  font-size: 64px;
+  font-size: 128px;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
