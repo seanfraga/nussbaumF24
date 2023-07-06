@@ -1,7 +1,7 @@
 // Load the messages asynchronously from the CSV file
 async function loadMessages() {
   try {
-    const response = await fetch('messages1.csv');
+    const response = await fetch('messages.csv');
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
