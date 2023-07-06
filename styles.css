@@ -14,13 +14,13 @@
 /* Styles for the body */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  background-color: #122aff;
 }
 
 #message {
   font-size: 64px;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
   text-align: center;
   margin-top: 50px;
 }
