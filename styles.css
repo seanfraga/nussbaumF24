@@ -1,7 +1,7 @@
 /* Styles for the header */
 .header {
-  background-color: #122aff;
-  color: #ffffff;
+  background-color: #c2ffdd;
+  color: #000000;
   padding: 10px;
   text-align: center;
 }
@@ -19,13 +19,13 @@
 /* Styles for the body */
 body {
   font-family: Arial, sans-serif;
-  background-color: #122aff;
+  background-color: #c2ffdd;
 }
 
 #message {
   font-size: 96px;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   margin-top: 50px;
 }
