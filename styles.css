@@ -1,31 +1,68 @@
+/* Environmental Ethics -- "Commons" */
+
+:root {
+  --header-bg: #33244A;
+  --header-ink: #DCD2E8;
+  --page-bg: #EDEAF1;
+  --message-ink: #2B1E3D;
+  --display: "Zilla Slab", Georgia, serif;
+  --display-weight: 700;
+}
+
+body {
+  font-family: var(--display);
+  background-color: var(--page-bg);
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Styles for the header */
 .header {
-  background-color: #c2ffdd;
-  color: #000000;
-  padding: 10px;
+  flex: 0 0 auto;
+  background-color: var(--header-bg);
+  color: var(--header-ink);
+  padding: clamp(10px, 2vw, 24px) clamp(16px, 4vw, 40px);
   text-align: center;
 }
 
 .header h1 {
-  margin: 0;
-  font-size: 64px;
+  margin: 0 auto;
+  max-width: 24ch;
+  font-size: clamp(24px, 4.4vw, 64px);
+  font-weight: var(--display-weight);
+  line-height: 1.12;
+  text-wrap: balance;
 }
 
 .header h2 {
-  margin: 0;
-  font-size: 48px;
+  margin: 0 auto;
+  max-width: 30ch;
+  font-size: clamp(20px, 3.3vw, 48px);
+  font-weight: var(--display-weight);
+  line-height: 1.15;
+  text-wrap: balance;
 }
 
-/* Styles for the body */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #c2ffdd;
+/* The prompt fills the space below the header and stays centered. script.js
+   sizes it to fit; the clamp below is the fallback if that never runs. */
+.stage {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(16px, 3.5vh, 44px) clamp(16px, 5vw, 56px);
 }
 
 #message {
-  font-size: 96px;
-  font-weight: bold;
-  color: #000000;
+  margin: 0;
+  max-width: min(28ch, 100%);
+  font-size: clamp(20px, min(4.4vw, 7vh), 96px);
+  font-weight: var(--display-weight);
+  line-height: 1.15;
+  color: var(--message-ink);
   text-align: center;
-  margin-top: 50px;
+  text-wrap: balance;
 }
